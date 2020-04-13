@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+  <head>
+    <title></title>
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Events of js</h1>
+      <div id="form">
+        <div>
+          <input
+            type="button"
+            value="push me!!"
+            onclick="document.querySelector('#form #textInput').style.background = 'yellow'"
+          />
+          <input type="text" placeholder="placeholder.." id="textInput" />
+        </div>
+
+        <div>
+          <input type="button" value="send" onclick="changePlc()" />
+          <input
+            type="text"
+            placeholder="placeholder.."
+            id="textInput2"
+            onblur="blurPlc()"
+            onclick="clickPlc()"
+          />
+        </div>
+
+        <div>
+          <input type="button" value="send" />
+          <input
+            type="text"
+            onmouseover="changeVal()"
+            onmouseout="resetVal()"
+            value="type something.."
+            id="textInput3"
+          />
+        </div>
+        <div>
+          <input type="button" value="send" onkeypress="keyPress(event)" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

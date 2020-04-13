@@ -1,0 +1,39 @@
+@mixin flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: blueviolet;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: blueviolet;
+  ;
+}
+
+::placeholder {
+  color: blueviolet;
+  ;
+}
+
+body {
+  padding: 10px;
+
+  .container {
+    @include flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #d3bde8;
+    padding: 25px;
+
+    #form {
+      @include flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

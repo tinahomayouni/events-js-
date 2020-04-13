@@ -1,0 +1,50 @@
+::-webkit-input-placeholder {
+  /* Edge */
+  color: blueviolet;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: blueviolet;
+}
+
+::-ms-input-placeholder {
+  color: blueviolet;
+}
+
+::placeholder {
+  color: blueviolet;
+}
+
+body {
+  padding: 10px;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #d3bde8;
+  padding: 25px;
+}
+
+body .container #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
